@@ -34,7 +34,13 @@ Required dependencies:
 
 ## Configuration
 
-Create a `config.json` file in the root directory:
+Copy the provided `config.example.json` to `config.json` in the root directory and update it with your settings:
+
+```bash
+cp config.example.json config.json
+```
+
+The configuration file structure:
 
 ```json
 {
@@ -56,7 +62,8 @@ Create a `config.json` file in the root directory:
   },
   "scanoss": {
     "url": "https://osskb.org/api/scan/direct",
-    "userAgent": "SCANOSS_AI_Shim/0.0.1"
+    "userAgent": "SCANOSS_AI_Shim/0.0.1",
+    "apiKey": "YOUR_SCANOSS_API_KEY"
   }
 }
 ```
