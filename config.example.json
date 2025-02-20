@@ -1,0 +1,30 @@
+{
+  "server": {
+    "port": 11000,
+    "host": "localhost"
+  },
+  "activeProvider": "deepseek",
+  "providers": {
+    "deepseek": {
+      "url": "http://localhost:11434/api/generate",
+      "model": "deepseek-r1",
+      "apiKey": "YOUR_API_KEY"
+    },
+    "claude": {
+      "url": "https://api.anthropic.com/v1/messages",
+      "model": "claude-3-5-sonnet-20240620",
+      "apiKey": "YOUR_API_KEY"
+    },
+    "openai": {
+      "url": "https://api.openai.com/v1/chat/completions",
+      "model": "gpt-4o-mini",
+      "apiKey": "YOUR_API_KEY"
+    }
+  },
+  "scanoss": {
+    "url": "https://osskb.org/api/scan/direct",
+    "userAgent": "SCANOSS_AI_Shim/0.0.1",
+    "apiKey": "YOUR_API_KEY"
+  }
+}
+
